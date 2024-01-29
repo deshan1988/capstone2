@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+}
+#header {
+  margin-top: 0;
+  background-color: #0f1035;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  justify-content: end;
+  align-items: center;
+  height: 50px;
+  padding-right: 20px;
+  margin-block: 0 0;
+  padding-inline-start: 0;
+}
+.header-items a {
+  text-decoration: none;
+  font-family: serif;
+  color: white;
+  font-weight: bold;
+}
+#hero {
+  background-color: #dcf2f1;
+  padding-top: 60px;
+}
+.hero-1 {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  gap: 30px;
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#hero .profile-pic {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  image-resolution: revert;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .hero-1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.resume-1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5px;
+}
+.workimg {
+  height: 200px;
+  width: 300px;
+}
+.work {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 50px;
+  text-align: justify;
+}
+.work .pic {
+  text-align: center;
+}
+#resume > h2 {
+  padding: 0;
+  padding-left: 50px;
+  margin-block-end: 0;
+}
+@media (max-width: 992px) {
+  .work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.projects-1 {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  text-align: justify;
+  padding: 50px;
+}
+.imgpro {
+  height: 200px;
+  width: auto;
+}
+#projects > h2 {
+  padding: 0;
+  padding-left: 50px;
+}
+.proj > .proimg {
+  text-align: center;
+}
+.proj > .item {
+  height: 150px;
+}
+@media (max-width: 992px) {
+  .projects-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .proj {
+    width: 100%;
+  }
+}
+.about-me-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 50px;
+  height: fit-content;
+  text-align: justify;
+}
+.mypic {
+  text-align: center;
+}
+.winterpic {
+  height: 200px;
+  width: 300px;
+}
+.bio > h3 {
+  margin-block-start: 0;
+}
+@media (max-width: 992px) {
+  .about-me-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.contact-me {
+  padding-left: 50px;
+}
+footer {
+  background-color: #0f1035;
+  color: white;
+  font-weight: bold;
+}
